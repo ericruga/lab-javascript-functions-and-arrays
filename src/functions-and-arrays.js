@@ -34,11 +34,23 @@ function findLongestWord(words) {
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers(totalNumbers) {
+function sumNumbers(numbers) {
+newNumber=0;
 
-
+for (let i = 0; i < numbers.length; i++) {
+if (typeof numbers[i] === "number"){
+newNumber += numbers[i]
+  }else if( typeof numbers[i] === "boolean"){
+    newNumber += numbers[i]
+  }else if( typeof numbers[i] === "string"){<
+    newNumber += numbers[i]
+  } else{
+    throw new Error("There's no number available!");
+  }
 }
 
+return newNumber;
+}
 
 
 // Iteration #3.1 Bonus:
